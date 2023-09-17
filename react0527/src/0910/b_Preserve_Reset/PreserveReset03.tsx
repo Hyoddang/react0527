@@ -24,7 +24,7 @@ const contacts: Contact[] = [
 export default function PreserveReset03() {
   // 선택된 연락처의 상태를 관리
   const [to, setTo] = useState<Contact>(contacts[0]);
-
+//! reducer로 변경해보기.
   return (
     <div>
       {/* 연락처 목록과 선택된 연락처, 선택 이벤트 핸들러 전달 */}
