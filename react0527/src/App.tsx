@@ -24,6 +24,10 @@ import SharingState from './0910/SharingState';
 import Abcde from './Abcde';
 import PreserveReset from './0910/PreserveReset';
 import Reducer from './0916/Reducer';
+import StateReducer from './0917/StateReducer';
+import Context from './0917/Context';
+import Ref from './0923/Ref';
+import DomRef from './0923/DomRef';
 
 
 
@@ -54,6 +58,11 @@ function App() {
         <Route path='/SharingState' element={<SharingState/>}/>
         <Route path='/preserveReset' element={<PreserveReset/>}/>
         <Route path='/reducer' element={<Reducer/>} />
+        <Route path='/stateReducer' element={<StateReducer/>}/>
+        <Route path='/context' element={<Context/>}/>
+        <Route path='/ref' element={<Ref/>}/>
+        <Route path='/domRef' element={<DomRef/>}/>
+
       </Routes>
     </>
   );
