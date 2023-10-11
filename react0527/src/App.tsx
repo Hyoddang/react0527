@@ -31,6 +31,8 @@ import DomRef from './0923/DomRef';
 import Effect from './0924/Effect';
 import StyledComponent from './0924/StyledComponent';
 import Index from './TodoList/Index';
+import Review from './1007/Review';
+import CustomHook from './1007/CustomHook';
 
 
 
@@ -67,6 +69,10 @@ function App() {
         <Route path='/domRef' element={<DomRef/>}/>
         <Route path='/effect' element={<Effect/>}/>
         <Route path='/styledcomponent' element={<StyledComponent/>}/>
+        <Route path='/review' element={<Review/>}/>
+        <Route path='/customHook' element={<CustomHook />}/>
+
+        
         <Route path='/todoList' element={<Index />}/>
       </Routes>
     </>
