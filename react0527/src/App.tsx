@@ -33,8 +33,16 @@ import StyledComponent from './0924/StyledComponent';
 import Index from './TodoList/Index';
 import Review from './1007/Review';
 import CustomHook from './1007/CustomHook';
+import API from './1014/Api';
+import Api from './1014/Api';
+import Msw from './1014/Msw';
+import { preProcessFile } from 'typescript';
+import Zustand from './1015/Zustand';
 
-
+if (process.env.NODE_ENV === 'development') {
+  const { worker } = require('../src/1014/MSW/mocks/browser');
+  worker.start();
+}
 
 // App함수가 화면에 렌더링되는 UI전체
 function App() {
@@ -71,6 +79,9 @@ function App() {
         <Route path='/styledcomponent' element={<StyledComponent/>}/>
         <Route path='/review' element={<Review/>}/>
         <Route path='/customHook' element={<CustomHook />}/>
+        <Route path='/api' element={<Api/>}/>
+        <Route path='/msw' element={<Msw/>} />
+        <Route path='/zustand' element={<Zustand/>} />
 
         
         <Route path='/todoList' element={<Index />}/>
